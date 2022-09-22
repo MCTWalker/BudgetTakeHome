@@ -1,24 +1,33 @@
-# README
+# Budget Take Home App
+Ruby take home project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##Build Instructions
 
-Things you may want to cover:
+Written for Mac OS
 
-* Ruby version
+Install homebrew if not already installed
 
-* System dependencies
+###Install Ruby
 
-* Configuration
+Information obtained from: https://gorails.com/setup/osx/12-monterey
 
-* Database creation
+Run `brew install rbenv ruby-build`
 
-* Database initialization
+Run `rbenv install 3.1.2`
 
-* How to run the test suite
+Run `rbenv global 3.1.2`
 
-* Services (job queues, cache servers, search engines, etc.)
+If the global version doesn't change, add
 
-* Deployment instructions
+`export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"`
 
-* ...
+To your .zshrc file
+
+Install Rails
+
+Run `gem install rails -v 7.0.2.4`
+
+Run `rbenv rehash`
+
+You should now have the rails command available in your terminal
